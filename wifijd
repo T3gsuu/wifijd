@@ -15,8 +15,8 @@ import argparse
 import socket
 import struct
 import fcntl
-dump_file_APs='/home/n/jammed_APs' + strftime('_%d_%b_%H_%M', time.localtime())
-dump_file_stations='/home/n/jammed_stations' + strftime('_%d_%b_%H_%M', time.localtime())
+dump_file_APs='/home/n/jammed_APs' + time.strftime('_%d_%b_%H_%M', time.localtime())
+dump_file_stations='/home/n/jammed_stations' + time.strftime('_%d_%b_%H_%M', time.localtime())
 
 # Console colors
 W  = '\033[0m'  # white (normal)
